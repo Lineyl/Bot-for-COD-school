@@ -1,0 +1,9 @@
+[Service]
+User=root
+WorkingDirectory=/usr/local/bin/CODbot
+ExecStart=/usr/bin/python3 /usr/local/bin/CODbot/FirstFileBot.py  
+RestartSec=10
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
